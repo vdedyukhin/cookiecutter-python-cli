@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 dependencies = ['click']
 
 setup(
-    name='{{ cookiecutter.repo_name }}',
+    name='{{ cookiecutter.pypi_name }}',
     version='{{ cookiecutter.version }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     license='BSD',
