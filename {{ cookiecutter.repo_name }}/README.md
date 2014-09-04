@@ -10,7 +10,7 @@ Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
 
 Simply run:
 
-    $ pipsi install {{ cookiecutter.pypi_name }}
+    $ pipsi install .
 
 
 # Usage
