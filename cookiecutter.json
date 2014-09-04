@@ -2,11 +2,11 @@
     "full_name": "Vincent Driessen",
     "email": "vincent@3rdcloud.com",
     "github_username": "nvie",
-    "project_name": "Python CLI tool",
+    "project_name": "My Tool",
     "repo_name": "mytool",
     "script_name": "my-tool",
     "package_name": "my_tool",
-    "project_short_description": "Python CLI tool contains all the boilerplate you need to create a high quality Python package you can install globally with pipsi.",
+    "project_short_description": "My Tool does one thing, and one thing well.",
     "release_date": "2014-09-04",
     "year": "2014",
     "version": "0.1.0"
