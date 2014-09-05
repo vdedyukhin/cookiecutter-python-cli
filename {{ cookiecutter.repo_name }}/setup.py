@@ -19,10 +19,11 @@ setup(
     zip_safe=False,
     platforms='any',
     install_requires=dependencies,
-    entry_points='''\
-    [console_scripts]
-    {{ cookiecutter.script_name }} = {{ cookiecutter.package_name }}.cli:main
-    ''',
+    entry_points={
+        'console_scripts': [
+            '{{ cookiecutter.script_name }} = {{ cookiecutter.package_name }}.cli:main',
+        ],
+    },
     classifiers=[
         # As from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         # 'Development Status :: 1 - Planning',
