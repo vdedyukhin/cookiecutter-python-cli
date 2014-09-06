@@ -7,4 +7,4 @@ import click
 def main(name, as_cowboy):
     """{{ cookiecutter.project_short_description }}"""
     greet = 'Howdy' if as_cowboy else 'Hello'
-    click.echo('{}, {}.'.format(greet, name))
+    click.echo('{0}, {1}.'.format(greet, name))
