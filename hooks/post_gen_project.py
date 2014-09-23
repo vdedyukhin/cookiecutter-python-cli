@@ -14,8 +14,7 @@ def main():
 
                 if not contents.endswith('\n'):
                     with open(path, 'wb') as f:
-                        f.write(contents)
-                        f.write('\n')
+                        f.write(b''.join(contents, b'\n').lstrip())
 
 
 if __name__ == '__main__':
