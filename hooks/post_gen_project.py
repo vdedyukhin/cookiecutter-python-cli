@@ -1,7 +1,5 @@
-#!python
+#!/usr/bin/env python
 import os
-
-from binaryornot.check import is_binary
 
 
 def main():
@@ -10,12 +8,14 @@ def main():
     for dirpath, dirnames, filenames in os.walk(root_path):
         for filename in filenames:
             path = os.path.join(dirpath, filename)
-            if not is_binary(path):
-                fd = open(path, 'a+b')
-                fd.seek(-1, os.SEEK_END)
-                if not fd.read(1) == '\n':
-                    fd.seek(0, os.SEEK_END)
-                    fd.write('\n')
+            if path.endswith('.py'):
+                with open(path, 'rb') as f:
+                    contents = f.read()
+
+                if not contents.endswith('\n'):
+                    with open(path, 'wb') as f:
+                        f.write(contents)
+                        f.write('\n')
 
 
 if __name__ == '__main__':
