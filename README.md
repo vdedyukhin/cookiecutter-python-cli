@@ -3,6 +3,7 @@
 A default template for a new CLI project, written in Python.  Deals with all
 the boilerplate involved in the setuptools setup, etc.
 
+
 ## How do I use this?
 
 Here's my preferred path to bliss:
@@ -13,6 +14,7 @@ Here's my preferred path to bliss:
    `$ pipsi install cookiecutter`.
 3. Now use Cookiecutter to create your brand new project:
    `$ cd ~/Desktop && cookiecutter https://github.com/nvie/cookiecutter-python-cli.git`
+
 
 ## How to answer these questions?
 
@@ -25,3 +27,7 @@ Here's what they're for:
 * `script_name` -- "my-tool"  (Binary of the script, i.e. what people will run on the command line.)
 * `package_name` -- "my_tool"  (Name of the Python module/package used internally.)
 
+
+## License
+
+Liberally licensed under BSD terms.
