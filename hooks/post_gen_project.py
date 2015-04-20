@@ -9,7 +9,7 @@ def main():
         for filename in filenames:
             path = os.path.join(dirpath, filename)
             if path.endswith('.py'):
-                with open(path, 'rb') as f:
+                with open(path, 'r') as f:
                     contents = f.read()
 
                 if not contents.endswith('\n'):
