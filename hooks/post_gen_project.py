@@ -9,10 +9,10 @@ def main():
         for filename in filenames:
             path = os.path.join(dirpath, filename)
             if path.endswith('.py'):
-                with open(path, 'r') as f:
+                with open(path, 'rb') as f:
                     contents = f.read()
 
-                if not contents.endswith('\n'):
+                if not contents.endswith(b'\n'):
                     with open(path, 'wb') as f:
                         f.write((contents + b'\n').lstrip())
 
